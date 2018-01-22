@@ -76,7 +76,7 @@ function deepestChild(){
   var element = document.querySelector('#grand-node')
   console.log(`element: ${element}`)
 
-  if (div.childElementCount>0){
+  if (element.childElementCount>0){
     console.log('hello')
     element = element.children[0]
   }else{
