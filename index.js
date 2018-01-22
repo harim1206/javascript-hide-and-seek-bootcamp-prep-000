@@ -73,5 +73,10 @@ implement correctly, but not beyond your ability!)
 
 function deepestChild(){
 
-  var div = document.querySelector('#grand-node')
+  var element = document.querySelector('#grand-node')
+  console.log(`element: ${element}`)
+
+  if (div.childElementCount>0){
+    element = element.children[0]
+  }
 }
