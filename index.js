@@ -79,6 +79,7 @@ function deepestChild(){
   if (div.childElementCount>0){
     element = element.children[0]
   }else{
+    console.log(`deepest element: ${element}`)
     return element
   }
 }
