@@ -75,13 +75,14 @@ function deepestChild(){
 
   var element = document.querySelector('#grand-node')
   console.log(`element: ${element}`)
-
-  if (element.childElementCount>0){
-    console.log('hello')
-    element = element.children[0]
-  }else{
-    console.log(`deepest element: ${element}`)
-    return element
+  while(element){
+    if (element.childElementCount>0){
+      console.log('hello')
+      element = element.children[0]
+    }else{
+      console.log(`deepest element: ${element}`)
+      return element
+    }
   }
 }
 deepestChild()
