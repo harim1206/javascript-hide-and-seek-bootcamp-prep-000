@@ -78,5 +78,7 @@ function deepestChild(){
 
   if (div.childElementCount>0){
     element = element.children[0]
+  }else{
+    return element
   }
 }
